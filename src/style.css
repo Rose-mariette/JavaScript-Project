@@ -435,4 +435,10 @@ span {
     gap: 6px;
     text-align: center;
   }
+   input[type="datetime-local"],
+  input[type="date"] {
+    background-color: #f0f4ff; 
+    
+    color: #333;
+  }
 }
