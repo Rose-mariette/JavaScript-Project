@@ -435,10 +435,17 @@ span {
     gap: 6px;
     text-align: center;
   }
-   input[type="datetime-local"],
-  input[type="date"] {
-    background-color: #fff; 
-    
-    color: #333;
+  input[type="date"]::before {
+    content: attr(placeholder);
+    color: rgba(128, 128, 128, 0);
+    background-color: #fff;
+    position: absolute;
+    margin-left: 12px;
+  }
+
+  
+  input[type="date"]:focus::before,
+  input[type="date"]:valid::before {
+    content: "";
   }
 }
