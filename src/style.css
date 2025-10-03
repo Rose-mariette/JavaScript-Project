@@ -435,32 +435,10 @@ span {
     gap: 6px;
     text-align: center;
   }
-   
-   .date-wrapper {
-    position: relative;
-    width: 100%;
-  }
-
-  .date-wrapper input[type="date"],
-  .date-wrapper input[type="datetime-local"] {
-    width: 100%;
-    padding-left: 100px;
-    background-color: #fff;
-  }
-
-  .date-wrapper::before {
-    content: "MM/DD/YYYY";
-    position: absolute;
-    left: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #888;
-    pointer-events: none;
-  }
-
- 
-  .date-wrapper input:valid + .date-placeholder,
-  .date-wrapper input:focus + .date-placeholder {
-    display: none;
+   input[type="datetime-local"],
+  input[type="date"] {
+    background-color: #fff; 
+    
+    color: #333;
   }
 }
