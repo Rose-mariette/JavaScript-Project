@@ -362,6 +362,10 @@ span {
     margin-bottom: 16px;
     margin-top: 20px;
   }
+  .container.right {
+    margin-bottom: 20px;
+  }
+ 
 
   
   .caption {
