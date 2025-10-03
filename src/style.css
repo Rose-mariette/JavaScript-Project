@@ -435,17 +435,32 @@ span {
     gap: 6px;
     text-align: center;
   }
-  input[type="date"]::before {
-    content: attr(placeholder);
-    color: rgba(128, 128, 128, 0);
-    background-color: #fff;
-    position: absolute;
-    margin-left: 12px;
+   
+   .date-wrapper {
+    position: relative;
+    width: 100%;
   }
 
-  
-  input[type="date"]:focus::before,
-  input[type="date"]:valid::before {
-    content: "";
+  .date-wrapper input[type="date"],
+  .date-wrapper input[type="datetime-local"] {
+    width: 100%;
+    padding-left: 100px;
+    background-color: #fff;
+  }
+
+  .date-wrapper::before {
+    content: "MM/DD/YYYY";
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+  }
+
+ 
+  .date-wrapper input:valid + .date-placeholder,
+  .date-wrapper input:focus + .date-placeholder {
+    display: none;
   }
 }
