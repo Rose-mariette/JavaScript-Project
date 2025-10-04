@@ -44,6 +44,9 @@ function showReminder(e) {
   reminder.style.display = "flex";
 }
 
+
+
+
 function dismissReminder() {
   document.getElementById("reminder").style.display = "none";
 }
